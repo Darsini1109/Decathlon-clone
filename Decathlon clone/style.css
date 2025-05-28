@@ -1,0 +1,308 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.top-nav {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.search {
+  flex: 1;
+  margin: 0 20px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-width: 200px;
+}
+
+.location {
+  font-size: 0.9rem;
+}
+
+.location .change {
+  color: blue;
+  cursor: pointer;
+}
+
+.nav-icons span {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.sale-timer {
+  background-color: #ffc107;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.offer {
+  flex: 1;
+  padding: 10px;
+  max-width: 300px;
+  text-align: center;
+  border: 1px dashed #fff;
+  margin: 10px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  background-color: #fff;
+  padding: 20px 10px;
+  gap: 15px;
+  scrollbar-width: thin;
+}
+
+.category {
+  flex: 0 0 auto;
+  text-align: center;
+  max-width: 120px;
+}
+
+.category img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.category img:hover {
+  transform: scale(1.05);
+}
+
+.category p {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.apps img {
+  width: 150px;
+  margin: 5px;
+}
+
+.category-nav {
+  display: flex;
+  justify-content: space-around;
+  background: #f8f8f8;
+  padding: 15px 0;
+  font-weight: bold;
+}
+
+.category-nav div {
+  cursor: pointer;
+}
+
+
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+.hero-slide {
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  color: #fcdab0;
+  max-width: 40%;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffc373;
+}
+
+.price-tag {
+  background: #f1f1f1;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  display: inline-block;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.price-tag span {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.hero-btn {
+  display: inline-block;
+  background: #2d3edb;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.2rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.nav.left {
+  left: 1%;
+}
+
+.nav.right {
+  right: 1%;
+}
+
+.feature-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
+  text-align: center;
+  max-width: 100px;
+}
+
+.feature img {
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 100%;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.hero-slide.active {
+  left: 0;
+  opacity: 1;
+  z-index: 2;
+}
+
+.hero-slide.previous {
+  left: -100%;
+  opacity: 0;
+  z-index: 1;
+}
+
+
+
+.monsoon-banner {
+  background: url('https://images.unsplash.com/photo-1569342681749-fc0cdb6b43e8') no-repeat center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.monsoon-banner h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.slideshow-container {
+  width: 100%; /* or fixed width if preferred */
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-wrapper {
+  display: flex;
+  width: calc(100% * 6); /* 6 slides */
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+/* Optional arrow styling */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
