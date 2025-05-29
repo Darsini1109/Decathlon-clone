@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Decathlon Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-nav">
+    <div class="logo">🏋️‍♂️ Decathlon</div>
+    <input type="text" placeholder="Search For 60+ Sports and 6000+ Products" class="search" />
+    <div class="location">📍 560002 <span class="change">CHANGE</span></div>
+    <div class="nav-icons">
+      <span>👤 Sign In</span>
+      <span>🏬 My Store</span>
+      <span>📞 Support</span>
+      <span>❤️ Wishlist</span>
+      <span>🛒 Cart</span>
+    </div>
+  </header>
+
+  <div class="sale-timer">
+    End of Summer Sale Starts In <span id="timer">--:--:--</span>
+  </div>
+
+  <section class="banner">
+    <img src="images/offer.avif" alt="Decathlon Banner">
+  </section>
+
+  <section class="categories">
+    <div class="category">
+      <img src="images/category1.avif" alt="Men" />
+      <p>Men</p>
+    </div>
+    <div class="category">
+      <img src="images/category2.avif" alt="Women" />
+      <p>Women</p>
+    </div>
+    <div class="category">
+      <img src="images/category3.avif" alt="Kids" />
+      <p>Kids</p>
+    </div>
+    <div class="category">
+      <img src="images/category4.webp" alt="Shoes" />
+      <p>Shoes</p>
+    </div>
+    <div class="category">
+      <img src="images/category4.avif" alt="Equipments" />
+      <p>Equipments &<br>Cycles</p>
+    </div>
+    <div class="category">
+      <img src="images/category6.webp" alt="Bags" />
+      <p>Bags &<br>Backpacks</p>
+    </div>
+    <div class="category">
+      <img src="images/category7.avif" alt="Accessories" />
+      <p>Sports<br>Accessories</p>
+    </div>
+    <div class="category">
+      <img src="images/category8.avif" alt="Sale" />
+      <p>Sale</p>
+    </div>
+  </section>
+
+  <!-- Slideshow -->
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="images/category9.avif" alt="Slide 1">
+    </div>
+    <div class="slide fade">
+      <img src="images/category10.avif" alt="Slide 2">
+    </div>
+    <div class="slide fade">
+      <img src="images/category9.avif" alt="Slide 3">
+    </div>
+    <div class="slide fade">
+      <img src="images/category12.avif" alt="Slide 4">
+    </div>
+    <div class="slide fade">
+      <img src="images/category13.avif" alt="Slide 5">
+    </div>
+    <div class="slide fade">
+      <img src="images/category14.avif" alt="Slide 6">
+    </div>
+
+    <!-- Navigation arrows -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+
+
+
+
+  
+
+
+<div class="features-bar">
+        <div class="feature">
+            <span class="icon">
+                <svg viewBox="0 0 40 40">
+                    <circle cx="20" cy="20" r="16" stroke="#3a47c2" stroke-width="2" fill="none"/>
+                    <path d="M13 13l-3 3 3 3" stroke="#3a47c2" stroke-width="2" fill="none"/>
+                    <path d="M10 16h10a8 8 0 1 1-3.5 15" stroke="#3a47c2" stroke-width="2" fill="none"/>
+                    <rect x="16" y="12" width="8" height="8" rx="2" stroke="#3a47c2" stroke-width="2" fill="none"/>
+                </svg>
+            </span>
+            <span class="feature-text">Easy Return</span>
+        </div>
+        <div class="divider"></div>
+        <div class="feature">
+            <span class="icon">
+                <svg viewBox="0 0 40 40">
+                    <rect x="7" y="16" width="16" height="10" rx="2" stroke="#3a47c2" stroke-width="2" fill="none"/>
+                    <rect x="23" y="19" width="8" height="7" rx="1" stroke="#3a47c2" stroke-width="2" fill="none"/>
+                    <circle cx="13" cy="28" r="2" stroke="#3a47c2" stroke-width="2" fill="none"/>
+                    <circle cx="27" cy="28" r="2" stroke="#3a47c2" stroke-width="2" fill="none"/>
+                    <path d="M10 21h7" stroke="#3a47c2" stroke-width="2" fill="none"/>
+                    <path d="M24 23h5" stroke="#3a47c2" stroke-width="2" fill="none"/>
+                </svg>
+            </span>
+            <span class="feature-text">Free Delivery above ₹999</span>
+        </div>
+        <div class="divider"></div>
+        <div class="feature">
+            <span class="icon">
+                <svg viewBox="0 0 40 40">
+                    <rect x="10" y="15" width="20" height="10" rx="2" stroke="#3a47c2" stroke-width="2" fill="none"/>
+                    <rect x="14" y="19" width="12" height="4" rx="1" stroke="#3a47c2" stroke-width="2" fill="none"/>
+                    <path d="M20 19v-4" stroke="#3a47c2" stroke-width="2" fill="none"/>
+                    <circle cx="20" cy="28" r="2" stroke="#3a47c2" stroke-width="2" fill="none"/>
+                </svg>
+            </span>
+            <span class="feature-text">Secure Payments</span>
+        </div>
+        <div class="divider"></div>
+        <div class="feature">
+            <span class="icon">
+                <svg viewBox="0 0 40 40">
+                    <rect x="10" y="22" width="20" height="7" rx="2" stroke="#3a47c2" stroke-width="2" fill="none"/>
+                    <path d="M20 22v-4" stroke="#3a47c2" stroke-width="2" fill="none"/>
+                    <circle cx="20" cy="14" r="3" stroke="#3a47c2" stroke-width="2" fill="none"/>
+                    <path d="M15 29h10" stroke="#3a47c2" stroke-width="2" fill="none"/>
+                </svg>
+            </span>
+            <span class="feature-text">Pick up from 100+ stores</span>
+        </div>
+    </div>
+
+<div class="sports-section">
+    <h2 class="section-title">YOUR FAVORITE SPORTS</h2>
+    <div class="carousel-container">
+        <button class="carousel-arrow left-arrow" id="leftArrow">&lt;</button>
+        <div class="sports-carousel" id="sportsCarousel">
+            <div class="sport-card">
+                <img src="image2/im1.avif" alt="Swimming">
+                <span class="sport-label">Swimming</span>
+            </div>
+            <div class="sport-card">
+                <img src="image2/im2.avif" alt="Running">
+                <span class="sport-label">Running</span>
+            </div>
+            <div class="sport-card">
+                <img src="image2/im3.avif" alt="Trekking">
+                <span class="sport-label">Trekking</span>
+            </div>
+            <div class="sport-card">
+                <img src="image2/im4.avif" alt="Fitness">
+                <span class="sport-label">Fitness</span>
+            </div>
+            <div class="sport-card">
+                <img src="image2/im5.avif" alt="Badminton">
+                <span class="sport-label">Badminton</span>
+            </div>
+            <div class="sport-card">
+                <img src="image2/im6.avif" alt="Football">
+                <span class="sport-label">Football</span>
+            </div>
+            <div class="sport-card">
+                <img src="image2/im7.avif" alt="Tennis">
+                <span class="sport-label">Tennis</span>
+            </div>
+            <div class="sport-card">
+                <img src="image2/im8.avif" alt="Cycling">
+                <span class="sport-label">Cycling</span>
+            </div>
+            <div class="sport-card">
+                <img src="image2/im9.avif" alt="Basketball">
+                <span class="sport-label">Basketball</span>
+            </div>
+            <div class="sport-card">
+                <img src="image2/im10.avif" alt="Climbing">
+                <span class="sport-label">Climbing</span>
+            </div>
+            <div class="sport-card">
+                <img src="image2/im11.png" alt="Climbing">
+                <span class="sport-label">Climbing</span>
+            </div>
+            <div class="sport-card">
+                <img src="image2/im12.avif" alt="Climbing">
+                <span class="sport-label">Climbing</span>
+            </div>
+        </div>
+        <button class="carousel-arrow right-arrow" id="rightArrow">&gt;</button>
+    </div>
+</div>
+
+
+<!---Product-->
+
+<div class="products-section">
+    <h2 class="section-title">Most Popular Products</h2>
+
+    <div class="products-grid">
+
+        <div class="product-card">
+            <div class="product-image-container">
+                <img src="image3/image0.avif" alt="FORCLAZ Men Packable Puffer Jacket for Trekking">
+                <div class="rating-bar">
+                    <span class="rating">
+                        &#9733; 4.5 | 8.2k
+                    </span>
+                    <button class="like-button" aria-label="Add to favorites">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18px" height="18px">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="product-brand">FORCLAZ</p>
+                <p class="product-name">Men Packable Puffer Jacket for Trekking ...</p>
+                <p class="product-price">₹ 2,999</p>
+            </div>
+            <button class="add-to-cart-btn">ADD TO CART</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image-container">
+                <img src="image3/image1.avif" alt="KALENJI JOGFLOW 100 Superior Grip Cushioned Walking Shoes">
+                <div class="rating-bar">
+                    <span class="rating">
+                        &#9733; 4.59 | 1.7k
+                    </span>
+                    <button class="like-button" aria-label="Add to favorites">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18px" height="18px">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="product-brand">KALENJI</p>
+                <p class="product-name">JOGFLOW 100 Superior Grip Cushioned W...</p>
+                <p class="product-price">₹ 1,599</p>
+            </div>
+            <button class="add-to-cart-btn">ADD TO CART</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image-container">
+                <img src="image3/image2.avif" alt="RUN ACTIVE Lightweight Cushioned Men's Running Shoes">
+                <div class="rating-bar">
+                    <span class="rating">
+                        &#9733; 4.39 | 20k
+                    </span>
+                    <span class="intensity">10km/wk</span>
+                    <button class="like-button" aria-label="Add to favorites">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18px" height="18px">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="product-brand">KALENJI</p>
+                <p class="product-name">RUN ACTIVE Lightweight Cushioned Men R...</p>
+                <p class="product-price">₹ 2,299</p>
+            </div>
+            <button class="add-to-cart-btn">ADD TO CART</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image-container">
+                <img src="image3/image4.avif" alt="FORCLAZ Men Zip-Off Convertible Dry Fit Cargo Pants">
+                <div class="rating-bar">
+                    <span class="rating">
+                        &#9733; 4.5 | 3.5k
+                    </span>
+                    <button class="like-button" aria-label="Add to favorites">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18px" height="18px">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="product-brand">FORCLAZ</p>
+                <p class="product-name">Men Zip-Off Convertible Dry Fit Cargo Pant...</p>
+                <p class="product-price">₹ 1,999</p>
+            </div>
+            <button class="add-to-cart-btn">ADD TO CART</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image-container">
+                <img src="image3/image5.avif" alt="INESIS Men's Golf Short Sleeved Polo T Shirt">
+                <div class="rating-bar">
+                    <span class="rating">
+                        &#9733; 4.57 | 5.3k
+                    </span>
+                    <button class="like-button" aria-label="Add to favorites">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18px" height="18px">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="product-brand">INESIS</p>
+                <p class="product-name">Men's Golf Short Sleeved Polo T Shirt MWS...</p>
+                <p class="product-price">₹ 699</p>
+            </div>
+            <button class="add-to-cart-btn">ADD TO CART</button>
+        </div>
+
+    </div>
+</div>
+
+
+<!--women category-->
+
+
+<div class="slider-section">
+        <h2 class="section-title">YOUR FAVORITE SPORTS</h2>
+        <div class="slider-container">
+            <button class="slider-arrow left-arrow">&lt;</button>
+            <div class="slider-content">
+                <div class="slide-item">
+                    <img src="image4/m1.avif" alt="Tshirt">
+                    <p>Tshirt</p>
+                </div>
+                <div class="slide-item">
+                    <img src="image4/im2.avif" alt="Artengo">
+                    <p>Artengo</p>
+                </div>
+                <div class="slide-item">
+                    <img src="image4/m3.avif" alt="Van Rysel">
+                    <p>Van Rysel</p>
+                </div>
+                <div class="slide-item">
+                    <img src="image4/m4.avif" alt="Domyos">
+                    <p>Domyos</p>
+                </div>
+                <div class="slide-item">
+                    <img src="image4/m5.avif" alt="Quechua">
+                    <p>Quechua</p>
+                </div>
+                <div class="slide-item">
+                    <img src="image4/m6.avif" alt="Kipuran">
+                    <p>Kipuran</p>
+                </div>
+                <div class="slide-item">
+                    <img src="image4/m7.avif" alt="Domyos">
+                    <p>Domyos</p>
+                </div>
+                <div class="slide-item">
+                    <img src="image4/m8.avif" alt="Domyos">
+                    <p>Domyos</p>
+                </div>
+                <div class="slide-item">
+                    <img src="image4/m9.avif" alt="kalengi">
+                    <p>kalengi</p>
+                </div>
+                <div class="slide-item">
+                    <img src="image4/m10.avif" alt="Solognac">
+                    <p>Solognac</p>
+                </div>
+            </div>
+            <button class="slider-arrow right-arrow">&gt;</button>
+        </div>
+    </div>
+
+
+
+
+
+    <!--nature-->
+
+    <div class="trek-slider-section">
+        <h2 class="trek-section-title">Our Curated choices for Indian Treks!</h2>
+        <div class="trek-slider-container">
+            <button class="trek-slider-arrow trek-left-arrow">&lt;</button>
+            <div class="trek-slider-content">
+                <div class="trek-slide-item">
+                    <img src="image5/n1.avif" alt="Buran Ghati Trek, Himachal Pradesh">
+                    <div class="trek-overlay">
+                        <p class="trek-title">Buran GhatiTrek,<br>Himachal Pradesh</p>
+                        <p class="trek-photo-credit">Photo by - Anirban Banerjee</p>
+                    </div>
+                </div>
+                <div class="trek-slide-item">
+                    <img src="image5/n2.avif" alt="Phulara Ridge Trek, Uttarakhand">
+                    <div class="trek-overlay">
+                        <p class="trek-title">Phulara Ridge Trek,<br>Uttarakhand</p>
+                        <p class="trek-photo-credit">Photo by - Nitesh Kumar</p>
+                    </div>
+                </div>
+                <div class="trek-slide-item">
+                    <img src="image5/n3.avif" alt="Dayara Bugyal Trek, Uttarakhand">
+                    <div class="trek-overlay">
+                        <p class="trek-title">Dayara Bugyal Trek,<br>Uttarakhand</p>
+                        <p class="trek-photo-credit">Photo by - Swathi Chatrapathy</p>
+                    </div>
+                </div>
+                <div class="trek-slide-item">
+                    <img src="image5/n4.avif" alt="Valley Of Flowers Trek, Uttarakhand">
+                    <div class="trek-overlay">
+                        <p class="trek-title">Valley Of Flowers Trek,<br>Uttarakhand</p>
+                        <p class="trek-photo-credit">Photo by - Pawan Jain</p>
+                    </div>
+                </div>
+                <div class="trek-slide-item">
+                    <img src="image5/n5.avif" alt="Kedarkantha Trek, Uttarakhand">
+                    <div class="trek-overlay">
+                        <p class="trek-title">Kedarkantha Trek,<br>Uttarakhand</p>
+                        <p class="trek-photo-credit">Photo by - XYZ</p>
+                    </div>
+                </div>
+
+        <div class="trek-slide-item">
+                    <img src="image5/n6.avif" alt="Kedarkantha Trek, Uttarakhand">
+                    <div class="trek-overlay">
+                        <p class="trek-title">Mizoram Trek,<br>Mizoram</p>
+                        <p class="trek-photo-credit">Photo by - XYZ</p>
+                    </div>
+                </div>
+            </div>
+            <button class="trek-slider-arrow trek-right-arrow">&gt;</button>
+        </div>
+    </div>
+
+
+
+
+    <!--cart12-->
+
+
+
+ <div class="product-carousel-section">
+    <h2 class="product-section-title">Beat the Heat! Summer Essentials</h2>
+    <div class="product-carousel-wrapper">
+        <button class="carousel-arrow left-arrow">&lt;</button>
+        <div class="product-carousel-content">
+
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <img src="image6/im1.avif" alt="Domyos T-Shirt">
+                    <div class="rating-heart">
+                        <span class="rating">★ 4.6 | 1.2k</span>
+                        <span class="heart-icon">&#x2661;</span>
+                    </div>
+                </div>
+                <p class="brand">DOMYOS</p>
+                <p class="product-name">Short Sleeves Regular Fit Women's T Shirt...</p>
+                <p class="price">₹ 199</p>
+                <button class="add-to-cart-btn">ADD TO CART</button>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <img src="image6/im2.avif" alt="Nabaiji Towel">
+                    <div class="rating-heart">
+                        <span class="rating">★ 4.6 | 1.2k</span>
+                        <span class="heart-icon">&#x2661;</span>
+                    </div>
+                </div>
+                <p class="brand">NABAIJI</p>
+                <p class="product-name">Microfiber Towel Size S 39 X 53 CM Soft B...</p>
+                <p class="price">₹ 99</p>
+                <button class="add-to-cart-btn">ADD TO CART</button>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <img src="image6/im3.avif" alt="Domyos Men's Joggers">
+                    <div class="rating-heart">
+                        <span class="rating">★ 4.5 | 6.5k</span>
+                        <span class="heart-icon">&#x2661;</span>
+                    </div>
+                </div>
+                <p class="brand">DOMYOS</p>
+                <p class="product-name">Men Gym Trackpants Joggers Slim Fit Sm...</p>
+                <p class="price">₹ 799</p>
+                <button class="add-to-cart-btn">ADD TO CART</button>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <img src="image6/im4.avif" alt="Domyos Zip Pocket Joggers">
+                    <div class="label price-drop">50% OFF</div>
+                    <div class="rating-heart">
+                        <span class="rating">★ 4.5 | 5.8k</span>
+                        <span class="heart-icon">&#x2661;</span>
+                    </div>
+                </div>
+                <p class="brand">DOMYOS</p>
+                <p class="product-name">Stretchable, Quick Dry Zip Pocket Convert...</p>
+                <p class="price">₹ 999</p>
+                <button class="add-to-cart-btn">ADD TO CART</button>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <img src="image6/im5.avif" alt="Quechua Hiking Trousers">
+                    <div class="label clearance">Clearance</div>
+                    <div class="rating-heart">
+                        <span class="rating">★ 4.7 | 5.3k</span>
+                        <span class="heart-icon">&#x2661;</span>
+                    </div>
+                </div>
+                <p class="brand">QUECHUA</p>
+                <p class="product-name">Men's Warm, Water Repellent Hiking Trouse...</p>
+                <p class="price">₹ 1,999</p>
+                <button class="add-to-cart-btn">ADD TO CART</button>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <img src="image6/im6.avif" alt="Kalenji Running Shoes">
+                    <div class="label new-arrivals">NEW ARRIVALS</div>
+                    <div class="rating-heart">
+                        <span class="rating">★ 4.41 | 7.8k</span>
+                        <span class="heart-icon">&#x2661;</span>
+                    </div>
+                </div>
+                <p class="brand">KALENJI</p>
+                <p class="product-name">JOGFLOW 100.1 Superior Grip Cushioned...</p>
+                <p class="price">₹ 1,599</p>
+                <button class="add-to-cart-btn">ADD TO CART</button>
+            </div>
+
+            <!-- Product Card 7 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <img src="image6/im7.avif" alt="Forclaz Puffer Jacket">
+                    <div class="rating-heart">
+                        <span class="rating">★ 4.5 | 8.2k</span>
+                        <span class="heart-icon">&#x2661;</span>
+                    </div>
+                </div>
+                <p class="brand">FORCLAZ</p>
+                <p class="product-name">Men Packable Puffer Jacket for Trekking -...</p>
+                <p class="price">₹ 2,999</p>
+                <button class="add-to-cart-btn">ADD TO CART</button>
+            </div>
+
+            <!-- Product Card 8 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <img src="image6/im8.avif" alt="Kalenji Jogflow 100 Shoes">
+                    <div class="rating-heart">
+                        <span class="rating">★ 4.59 | 1.7k</span>
+                        <span class="heart-icon">&#x2661;</span>
+                    </div>
+                </div>
+                <p class="brand">KALENJI</p>
+                <p class="product-name">JOGFLOW 100 Superior Grip Cushioned R...</p>
+                <p class="price">₹ 1,599</p>
+                <button class="add-to-cart-btn">ADD TO CART</button>
+            </div>
+
+            
+
+        </div>
+        <button class="carousel-arrow right-arrow">&gt;</button>
+    </div>
+</div>
+<div>
+    <button class="carousel-arrow left-arrow">&#8249;</button>
+<button class="carousel-arrow right-arrow">&#8250;</button>
+</div>
+
+               
+    </div>
+
+
+
+    <!--foot2-->
+
+   <div class="service-wrapper">
+    <div class="service-container">
+        <img src="image7/image1.avif" alt="Cycle Servicing">
+        <h2>Cycle Servicing</h2>
+        <p>Book your cycle servicing now to keep your bike in top condition.</p>
+        <button>BOOK NOW</button>
+    </div>
+
+    <div class="service-container">
+        <img src="image7/image2.avif" alt="Bike Repair">
+        <h2>Bike Repair</h2>
+        <p>Professional bike repair services to get you back on the road.</p>
+        <button>BOOK NOW</button>
+    </div>
+
+    <div class="service-container">
+        <img src="image7/image3.avif" alt="Tyre Replacement">
+        <h2>Tyre Replacement</h2>
+        <p>Replace worn-out tyres with high-quality replacements.</p>
+        <button>BOOK NOW</button>
+    </div>
+
+    <div class="service-container">
+        <img src="image7/image4.avif" alt="Gear Tuning">
+        <h2>Gear Tuning</h2>
+        <p>Fine-tune your gears for a smoother cycling experience.</p>
+        <button>BOOK NOW</button>
+    </div>
+</div>
+
+
+
+
+<div>
+    <p>
+        <h2><bold>Our Sport Collections :</bold></h2>
+Badminton : Badminton Racket | Adult Badminton Racket | Junior Badminton Racket | Badminton Shoes | Mens Badminton Shoes | Womens Badminton Shoes | Kids Badminton Shoes | Badminton Jersey | Mens Badminton Jerseys | Womens Badminton Jerseys | Kids Badminton Apparels | Badminton Shorts | Mens Badminton Shorts | Womens Badminton Shorts and Skirts | Shuttlecocks | Plastic Shuttlecocks | Feather Shuttlecocks | Badminton Accessories | Badminton Grips | Badminton Net | Badminton Racket Strings | Badminton Training Bands | Racket Cover Bags |
+Tennis : Tennis Rackets | Tennis Balls | Tennis Shoes | Tennis Tshirts | Tennis Shorts | Tennis Skirts | Tennis Socks | Tennis Accessories | Tennis Cover and Bags | Tennis Grips | Tennis Equipments |
+Table Tennis : Table Tennis Rackets | Table Tennis Balls | Table Tennis Shoes | Table Tennis Accessories | Table Tennis Nets | Table Tennis Racket Covers | Table Tennis Tables |
+Squash : Squash Rackets | Squash Balls | Squash Shoes | Squash Accessories | Squash Kit Bags |
+Hiking & Trekking : Hiking Shoes | Men Hiking Shoes | Women Hiking Shoes | Kids Hiking Shoes | Trekking Shoes | Men Trekking Shoes | Women Trekking Shoes | Hiking and Trekking Tshirts | Men Hiking and Trekking Tshirts | Women Hiking and Trekking Tshirts | Kids Hiking and Trekking Tshirts | Hiking and Trekking Shorts and Skirts | Men Hiking and Trekking Shorts | Women Hiking and Trekking Shorts/Skirts | Kids Hiking and Trekking Shorts/Skirts | Hiking and Trekking Pants | Men Hiking and Trekking Pants/Cargos | Women Hiking and Trekking Pants/Leggings | Kids Hiking and Trekking Pants | Hiking Poles | Adult Hiking Poles | Kids Hiking Poles | Hiking Pole Accessories | Hiking Compass | Hiking Bags | 10-40L Hiking Backpacks | Trekking Backpacks & Rucksacks | Men Trekking Backpacks | Women Trekking Backpacks | Hiking Water Bottles | Hiking Headlamps | Hiking and Trekking Equipment | Hiking and Trekking Binoculars | Hiking and Trekking Clothing | Sleeping Bags, Liners and Pillows | Trekking Tents |
+Gym Equipment : Gym Equipment | Home Gym Equipments | Dumbbell Sets | Dumbbell Sets and Weights | Ellipticals and Cross Trainers | Treadmills and Steppers | Exercise Bike and Spin Bike | Weights Racks Plates Bars | Kettlebells | Ankle Weights | Adjustable Dumbbells | Gym Bench and Squat Rack | Boxing Equipments | Trampolines | Rowers | Weighing Machine | Yoga Mats |
+Camping : Tents | Chairs | Tables | Furnitures | Sleeping bags | Mattresses | Camping Accessories | Cooksets |
+Gym Track pants : Gym Shorts | Gym Track pants | Gym Shorts | Men Tracksuits | Women Gym suits | Sports Bra | Gym Tops | Women fitness jacket |
+Skiing : Men Thermals | Women Thermals | Beanies | | Winter Accessories | Warmers | Junior Jackets | Junior Beanies | Ski jackets |
+Wildlife : Camo Tshirts | Camo Trousers | Camo Bermudas | Camo Caps | Gum Boots | Binoculars | | Shelter | Umbrellas | Pouches |
+Cycle : Bike Racks | Cycles | Mountain Cycles | Hybrid Cycles | Road Bikes | Kids Cycle | Cycle Accessories |
+Road Cycle : Bike Racks | Cycles | Mountain Bikes | Hybrid Cycles | Road Bikes | Kids Cycle | Cycle Accessories |
+Fishing : Fishing Rods | Fishing Reels | Hooks | Lures | Fishing lines | Fishing Accessories | Fishing Camp Furnitures | Fishing ponchos | Fishing GIlet |
+Horse Riding : Horse riding helmets | Breeches | Horse riding boots | Horse riding gloves | Leather saddle | Cloth saddle |
+Swimming : Swimming costumes | Swimming cap | Swimming goggles | Towels | Bathrobes | Flipflops | Swimming equipments | Aqua learning | Buoyancy aids |
+Football : Football | Football shoes | Football bag | Football Jersey | Football shorts | Football Socks | Goal Posts | Training accessories | Goalkeeper Kit | Football Equipment |
+Cricket : Tennis Cricket bat | English Willow Bat | Kids cricket bat | Cricket ball | Cricket accessories | Adult cricket shoes | Kids cricket shoes | Cricket track pants | Cricket jersey |
+Surfing : Board shorts | Frisbee | shorts2 | Wetsuits | Bodyboards | Kites | Snorkelling | Scuba diving | Kayaks | Standup paddle |
+Running : | Jogging shoes | | Running Tshirts | Running shorts | Running Tights | | Sports watch | Weighing scale | Earphones |
+Golf : Golf clubs | Golf trolleys | Golf balls | Golf accessories | Polo Tshirts | Golf Trouser | Golf shoes | Golf caps | Golf shorts |
+Skateboard : Skateboard | Long boards | Waveboard | Skateboard shoes | Skateboard accessories | Kids scooters | Adult scooters | Spares | Scooter helmets |
+Roller skating : Quad Roller skates | Inline skates | Kids Inline skates | Adult Inline skates | Skating Helmets | Skating guards | Skating bags | Skating spares accessories |
+Winter Collection : We provide a wide range of Winter Jackets, Winter shoes, Sweaters, Fleece, Pullover, Down jacket, Beanies, Gloves, Snow jacket, Arctic winter jacket, Woolen socks and with more winter categories. |
+Men Winter Collections : Men Sweaters | Men Fleece Jacket | | Men Sweatshirt | Men Hoodies | Men Winter Coat | | Men Puffer Jacket | Men Down Jacket | Men Snow Jacket | Men Bomber Jacket | Winter Shoes | Men Winter Shoes | Snow Socks | Men Winter Outfits | Men Winter Tshirt | Men Thermals | Men Warm Trouser |
+Women Winter Collection : Women Sweaters | Women Fleece Jacket | Women Pullover | Women Sweatshirt | Women Jackets | Women Winter Jacket | Women Puffer Jacket | Women Down Jacket | Women Snow Jacket | Women Bomber Jacket | Women Snow Shoes | Women Winter Outfits | Women Thermals | Women Warm Trouser |
+    </p>
+</div>
+
+
+
+    <footer>
+        <div class="footer-top">
+            <div class="promise">
+                <p>OUR PROMISE</p>
+                <ul>
+                    <li>No Cost EMI Available*</li>
+                    <li>Easy Returns*</li>
+                    <li>1 Million+ Happy Customers</li>
+                </ul>
+            </div>
+            <div class="app-links">
+                <p>EXPERIENCE DECATHLON APP ON MOBILE</p>
+                <a href="#"><img src="image8/im1.webp" alt="Get it on Google Play"></a>
+                <a href="#"><img src="image8/im2.svg" alt="Download on the App Store"></a>
+            </div>
+        </div>
+        
+        <div class="footer-middle">
+            <div class="links">
+                <p>SUPPORT</p>
+                <a href="#">Contact our Stores</a>
+                <a href="#">Delivery</a>
+            </div>
+            <div class="links">
+                <p>OUR SERVICES</p>
+                <a href="#">Decathlon for Schools</a>
+                <a href="#">Decathlon for Corporates</a>
+                <a href="#">Decathlon Gift Cards</a>
+                <a href="#">Affiliate Program</a>
+            </div>
+            <div class="links">
+                <p>ABOUT US</p>
+                <a href="#">Who we are</a>
+                <a href="#">Careers</a>
+                <a href="#">Made In India</a>
+            </div>
+            <div class="links">
+                <p>LEGAL</p>
+                <a href="#">Return Policy</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="secure-transaction">
+                <p>100% SECURE TRANSACTION</p>
+                <p>Secure SSL encryption</p>
+            </div>
+            <div class="payment-methods">
+                <img src="image8/im3.svg" alt="Debit Card">
+                <img src="image8/im4.svg" alt="Credit Card">
+                <img src="image8/im5.svg" alt="UPI">
+                <img src="image8/im6.svg" alt="Net Banking">
+            </div>
+            <div class="countries">
+                <p>DECATHLON is present in 46 Countries</p>
+            </div>
+        </div>
+        
+        <div class="follow-us">
+            <p>FOLLOW US</p>
+            <a href="#"><img src="image8/im7.svg" alt="Facebook"></a>
+            <a href="#"><img src="image8/im10.svg" alt="Twitter"></a>
+            <a href="#"><img src="image8/im8.svg" alt="Instagram"></a>
+            <a href="#"><img src="image8/im9.svg" alt="YouTube"></a>
+        </div>
+        
+        <div class="footer-bottom-text">
+            <p>© 2025 Decathlon Sports India Pvt Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+   
+
+  <!-- Include JS at the end -->
+  <script src="script.js"></script>
+</body>
+</html>
