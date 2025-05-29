@@ -289,6 +289,7 @@ document.addEventListener('DOMContentLoaded', () => {
             isDown = false;
             sliderContent.classList.remove('active');
         });
+        
 
         sliderContent.addEventListener('mouseup', () => {
             isDown = false;
