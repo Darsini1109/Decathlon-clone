@@ -1717,7 +1717,7 @@
 #contactBtn {
   background-color: #1f0edb;    /* Blue color as in your code */
   color: white;                 /* White text */
-  padding: 2px ;          /* Match the image's padding */
+  padding: 8px 18px ;          /* Match the image's padding */
   font-size: 12px;              /* Medium-large font */
   border: none;                 /* No border */
   border-radius: 2px;           /* Slightly rounded corners */
@@ -1725,7 +1725,7 @@
   box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow */
   transition: background 0.3s, transform 0.2s;
   font-family: 'Segoe UI', Arial, sans-serif;
-  margin: 20px 0;
+  margin: 10px 0;
   letter-spacing: 1px;
 }
 
