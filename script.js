@@ -340,6 +340,29 @@ document.addEventListener('DOMContentLoaded', function () {
 /* contact us*/
 
 
+ // Get elements
+  var modal = document.getElementById("contactModal");
+  var btn = document.getElementById("contactBtn");
+  var span = document.getElementById("closeModal");
+
+  // Open modal on button click
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  // Close modal on (x) click
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // Close modal when clicking outside the modal content
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+
 
 
 

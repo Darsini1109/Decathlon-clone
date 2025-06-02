@@ -639,6 +639,30 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="store-badge">
         <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" class="store-badge">
       </div>
+
+      <button id="contactBtn">Contact Us</button>
+
+<!-- The Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+      <label for="contact">Contact Details</label>
+      <input type="text" id="contact" name="contact" placeholder="Your contact number.." required>
+
+      <label for="email">Email ID</label>
+      <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+      <label for="address">Address</label>
+      <textarea id="address" name="address" placeholder="Your address.." rows="3" required></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</div>
     </div>
 
     <!-- SOCIAL + LINKS -->
